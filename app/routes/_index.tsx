@@ -1,4 +1,3 @@
-// app/routes/_index.tsx (or wherever your page is)
 export default function Index() {
     return (
         <main>
