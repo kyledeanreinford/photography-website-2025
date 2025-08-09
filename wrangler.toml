@@ -1,0 +1,7 @@
+[[r2_buckets]]
+binding = "R2"
+bucket_name = "photography-website"
+preview_bucket_name = "photography-website"
+
+[vars]
+ASSET_BASE_URL = "https://64a8b71d4d3482d2cedb640314d21858.r2.cloudflarestorage.com/photography-website"
