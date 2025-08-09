@@ -1,4 +1,6 @@
-*, *::before, *::after { box-sizing: border-box; }
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 
 :root {
     --background: #ffffff;
@@ -10,6 +12,7 @@
 }
 
 body {
+    margin: 0;
     background: var(--background);
     color: var(--foreground);
     font-family: var(--font), serif;
@@ -17,26 +20,37 @@ body {
 }
 
 main {
-    height: 100vh;
+    height: 100svh;
     display: grid;
     place-items: center;
-    padding: 2.4rem;
+    padding: 1.2rem;
 }
 
 article {
     display: grid;
     gap: var(--gap);
     justify-items: center;
-    width: min(70rem);
+    width: 100%;
+
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        max-height: 65svh;
+        object-fit: contain;
+    }
 }
+
 
 .contact {
     display: flex;
-    flex-direction: row;
-    gap: .5rem;
+    flex-wrap: wrap;
+    gap: 0.4rem 0.8rem;
     color: var(--muted);
-    font-size: 1rem;
+    font-size: 0.95rem;
     letter-spacing: 0.02rem;
+    text-align: center;
+    justify-content: center;
 
     a {
         color: var(--link);
@@ -45,7 +59,24 @@ article {
     }
 
     a:hover {
-        filter: brightness(25%);
+        filter: brightness(85%);
     }
 }
 
+@media (min-width: 640px) {
+    main {
+        padding: 2.4rem;
+    }
+    article {
+        width: min(70rem, 100%);
+    }
+    article img {
+        max-height: none;
+    }
+    .contact {
+        flex-wrap: nowrap;
+        font-size: 1rem;
+        gap: .5rem;
+        text-align: left;
+    }
+}
