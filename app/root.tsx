@@ -23,6 +23,7 @@ export const meta: MetaFunction = () => {
 export const links: LinksFunction = () => ([
   { rel: "stylesheet", href: resetHref },
   { rel: "stylesheet", href: siteHref },
+  { rel: "icon", type: "image/png", href: "/favicon.png" },
 ]);
 
 export function Layout({ children }: { children: React.ReactNode }) {
