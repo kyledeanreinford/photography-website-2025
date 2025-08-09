@@ -5,7 +5,7 @@ export default function Index() {
             <article>
                 <img src="/random-image" alt="Random photograph from archive" />
                 <p className="contact">
-                    Kyle Reinford ·{" "}
+                    Kyle Dean Reinford ·{" "}
                     <a href="mailto:kyledeanreinford@gmail.com">email</a> ·{" "}
                     <a href="https://www.instagram.com/kdrshoots/">instagram</a>
                 </p>

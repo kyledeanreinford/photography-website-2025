@@ -1,4 +1,4 @@
-import type { LinksFunction } from "@remix-run/cloudflare";
+import {LinksFunction, MetaFunction} from "@remix-run/cloudflare";
 import {
   Links,
   Meta,
@@ -8,6 +8,17 @@ import {
 } from "@remix-run/react";
 import resetHref from "./styles/reset.css?url";
 import siteHref from "./styles/site.css?url";
+
+export const meta: MetaFunction = () => {
+  return [
+    { title: "Kyle Dean Reinford Photography" },
+    {
+      name: "description",
+      content: "Photography portfolio and contact information for Kyle Dean Reinford.",
+    },
+    { name: "viewport", content: "width=device-width, initial-scale=1" },
+  ];
+};
 
 export const links: LinksFunction = () => ([
   { rel: "stylesheet", href: resetHref },
