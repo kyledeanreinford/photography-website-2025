@@ -25,12 +25,14 @@ export default function About() {
                         reach out any time.
                     </p>
                     <p>
-                        Clients include: Rolling Stone, Spotify, SPIN, Live Nation and a variety of labels and bands directly.
+                        Clients include: Rolling Stone, Spotify, SPIN, Live Nation and a variety of labels and bands
+                        directly.
                     </p>
 
                     <ul className="contact-list">
                         <li>Email: <a href="mailto:kyledeanreinford@gmail.com">kyledeanreinford@gmail.com</a></li>
                         <li>Website: <a href="https://kyledeanreinford.com">kyledeanreinford.com</a></li>
+                        <li>Substack: <a href="https://kdr5.substack.com">kdr5.substack.com</a></li>
                         <li>Instagram: <a href="https://instagram.com/kdrshoots">@kdrshoots</a></li>
                     </ul>
                 </section>

@@ -8,6 +8,7 @@ export default function Index() {
                 <p className="contact">
                     <Link to="/about" prefetch="intent">Kyle Dean Reinford</Link> ·{" "}
                     <a href="mailto:kyledeanreinford@gmail.com">email</a> ·{" "}
+                    <a href="https://kdr5.substack.com">substack</a> ·{" "}
                     <a href="https://www.instagram.com/kdrshoots/">instagram</a>
                 </p>
             </article>
